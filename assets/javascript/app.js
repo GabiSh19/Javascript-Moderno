@@ -1,26 +1,26 @@
-// Primer Capítulo. VARIABLES, CONSTANTES, PROMPTS, ALERTS Y CONFIRM. 
-// sole.log('Hola Mundo');
-// // alert('Hola desde app.js');
-// // console.log( console.log('Hola Mundo') );
+//Primer Capítulo: variables, constantes, prompts, alerts y confirm:
 
-// let a = 10,
-//     b = 20,
-//     c = 'Hola ',
-//     d = 'Spiderman',
-//     x = a + b;
+console.log('Hola Mundo');
+// alert('Hola desde app.js');
+// console.log( console.log('Hola Mundo') );
 
-// const saludo =  c + d;
 
-// // console.log('%c Mis variables', 'color:blue; font-weight: bold');
-// // console.log({ a });
-// // console.log({ b });
-// // console.log({ c });
+//Cómo definir distintas variables: 
+let a = 10,
+    b = 20,
+    c = 'Hola ',
+    d = 'Spiderman',
+    x = a + b;
 
-// c = 'Hola de nuevo';
+const saludo =  c + d;
 
-// // console.table({a, b, c, d, x });
+// console.log('%c Mis variables', 'color:blue; font-weight: bold');
+// console.log({ a });
+// console.log({ b });
+// console.log({ c });
 
-// let miNuevoNombre = 'Fernando Herrera';
+c = 'Hola de nuevo';
 
-console.log( console.log('Hola Mundo') );
-console.log('Hola Mundo')
+// console.table({a, b, c, d, x });
+
+let miNuevoNombre = 'Fernando Herrera';
