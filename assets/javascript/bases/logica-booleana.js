@@ -50,7 +50,7 @@ const soyUndefined = undefined;
 const soyNull = null;
 const soyFalso = false;
 
-const a1 = false && 'Hola Mundo' && 150; // ?
+const a1 = false && 'Hola Mundo' && 150; // Retornará false, si todo es verdadero retorna el último valor Verdadero.
 const a2 = 'Hola' && 'Mundo' && soyFalso && true;
 const a3 = soyFalso || 'Ya no soy falso';
 const a4 = soyFalso || soyUndefined || soyNull || 'Ya no soy falso de nuevo' || true;
