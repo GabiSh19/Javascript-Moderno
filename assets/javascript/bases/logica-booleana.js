@@ -50,15 +50,15 @@ const soyUndefined = undefined;
 const soyNull = null;
 const soyFalso = false;
 
-const a1 = false && 'Hola Mundo' && 150; // Retornará false, si todo es verdadero retorna el último valor Verdadero.
-const a2 = 'Hola' && 'Mundo' && soyFalso && true;
-const a3 = soyFalso || 'Ya no soy falso';
-const a4 = soyFalso || soyUndefined || soyNull || 'Ya no soy falso de nuevo' || true;
-const a5 = soyFalso || soyUndefined || regresaTrue() || 'Ya no soy falso de nuevo' || true;
+const a1 = false && 'Hola Mundo' && 150; // Retornará false; si todo es verdadero retorna el último valor Verdadero.
+const a2 = 'Hola' && 'Mundo' && soyFalso && true; // Retornará false
+const a3 = soyFalso || 'Ya no soy falso'; // Retorna: 'Ya no soy falso
+const a4 = soyFalso || soyUndefined || soyNull || 'Ya no soy falso de nuevo' || true; // Retorna: 'Ya no soy falso de nuevo' ya que es el primer true que encontró
+const a5 = soyFalso || soyUndefined || regresaTrue() || 'Ya no soy falso de nuevo' || true; 
 
 console.log({a1, a2, a3, a4, a5 });
 
-if ( regresaFalse() && regresaTrue() && (true || false || true) ) {
+if ( regresaFalse() && regresaTrue() && (true || false || true) ) { //No se recomienda mucho esta manera ya que hace ininteligible el código.
     console.log('Hacer algo');
 } else {
     console.log('Hacer otra cosa');
