@@ -1,11 +1,9 @@
 //El operador teranario no es más que un if-else resumido:
 
 /**
- * Días de semana abrimos a las 11, 
- * pero los fines de semana abrimos a las 9
- */
-
+ * Días de semana abrimos a las 11, pero los fines de semana abrimos a las 9*/
 // Entra a un sitio web, para consultar si está abierto hoy....
+
 const dia = 1; // 0: domingo... 1:Lunes....
 const horaActual = 10;
 
@@ -21,6 +19,8 @@ let mensaje; // Está abierto, Está cerrado, hoy abrimos a las XX
 //     console.log('Día de semana');
 //     horaApertura = 11;
 // }
+
+// Lo anterior podemos resumirlo con el operador ternario de la siguiente manera: 
 horaApertura = ( [0,6].includes( dia ) ) ? 9 : 11;
 
 
@@ -30,6 +30,7 @@ horaApertura = ( [0,6].includes( dia ) ) ? 9 : 11;
 //     mensaje = `Está cerrado, hoy abrimos a las ${ horaApertura }`;
 // }
 
+// Lo anterior podemos resumirlo con el operador ternario de la siguiente manera: 
 mensaje = ( horaActual >= horaApertura ) ? 'Está abierto' : `Está cerrado, hoy abrimos a las ${ horaApertura }`;
 
 
