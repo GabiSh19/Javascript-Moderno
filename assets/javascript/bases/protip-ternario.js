@@ -14,13 +14,14 @@ const amigosArr = [
     'Tony',
     'Dr. Strange',
     amigo ? 'Thor' : 'Loki',
+    //Lo siguiente es una función anónima autoinvocada
     // (()=> 'Nick Fury')()
     elMayor(10, 15)
 ];
 
 console.log( amigosArr );
 
-
+// Operador ternario con más de una condición: 
 const nota = 82.5; // A+ A B+
 const grado = nota >= 95 ? 'A+' :
               nota >= 90 ? 'A'  :
