@@ -1,4 +1,14 @@
 class Persona {
+
+    static _conteo = 0;
+    static get conteo(){
+        return Persona._conteo + 'instancias';
+    }
+
+    static mensaje (){
+        console.log('Soy un método estático')
+    }
+
     nombre = '';
     codigo = '';
     frase = '';
