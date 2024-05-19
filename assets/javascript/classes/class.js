@@ -13,7 +13,11 @@ class Persona {
     }
 
     set setComidaFavorita( comida ){
-        this.comida = comida;
+        this.comida = comida.toUpperCase();
+    }
+
+    get getComidaFavorita() {
+        return ` La comida favorita de ${this.nombre} es ${this.comida}` ;
     }
 
     quienSoy(){
@@ -30,10 +34,11 @@ class Persona {
 
 const spiderman = new Persona ('Peter Parker', 'Spidy', 'Hola, soy Spiderman')
 const ironman = new Persona ('Tony Stark', 'IronMan', 'Yo soy Ironman')
-console.log( spiderman ); 
-console.log( ironman );
+// console.log( ironman );
 
-spiderman.miFrase();
-ironman.miFrase();
+// spiderman.miFrase();
+// ironman.miFrase();
 
 spiderman.setComidaFavorita = "El pie de cereza de la tía May";
+console.log( spiderman ); 
+console.log(spiderman.getComidaFavorita);
