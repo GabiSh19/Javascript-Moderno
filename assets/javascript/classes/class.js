@@ -1,7 +1,8 @@
 class Persona {
-    nombre;
-    codigo;
-    frase;
+    nombre = '';
+    codigo = '';
+    frase = '';
+    comida = '';
 
     constructor(nombre, codigo, frase) {
 
@@ -9,6 +10,10 @@ class Persona {
         this.codigo = codigo;
         this.frase = frase;
     
+    }
+
+    set setComidaFavorita( comida ){
+        this.comida = comida;
     }
 
     quienSoy(){
@@ -30,3 +35,5 @@ console.log( ironman );
 
 spiderman.miFrase();
 ironman.miFrase();
+
+spiderman.setComidaFavorita = "El pie de cereza de la tía May";
