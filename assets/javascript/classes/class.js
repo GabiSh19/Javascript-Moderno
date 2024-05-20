@@ -50,5 +50,8 @@ const ironman = new Persona ('Tony Stark', 'IronMan', 'Yo soy Ironman')
 // ironman.miFrase();
 
 spiderman.setComidaFavorita = "El pie de cereza de la tía May";
-console.log( spiderman ); 
-console.log(spiderman.getComidaFavorita);
+// console.log( spiderman ); 
+// console.log(spiderman.getComidaFavorita);
+
+Persona._conteo = 2
+console.log('Conteo estátito: ', Persona._conteo);
