@@ -1,9 +1,16 @@
 class Persona {
 
+    //Propiedades estáticas
+
     static _conteo = 0;
+
+    //Getters estáticos
+
     static get conteo(){
-        return Persona._conteo + 'instancias';
+        return Persona._conteo + ' instancias';
     }
+
+    //Metodos estáticos
 
     static mensaje (){
         console.log('Soy un método estático')
@@ -19,7 +26,8 @@ class Persona {
         this.nombre = nombre;
         this.codigo = codigo;
         this.frase = frase;
-    
+        
+        Persona._conteo++;
     }
 
     set setComidaFavorita( comida ){
@@ -53,5 +61,13 @@ spiderman.setComidaFavorita = "El pie de cereza de la tía May";
 // console.log( spiderman ); 
 // console.log(spiderman.getComidaFavorita);
 
-Persona._conteo = 2
+// Persona._conteo = 2
 console.log('Conteo estátito: ', Persona._conteo);
+console.log(Persona.conteo);
+Persona.mensaje();
+
+//En javascript podemos definir propiedades estáticas fuera de la clase
+Persona.propiedadExterna = 'Hola Mundo';
+
+console.log( Persona.propiedadExterna );
+console.log(Persona);
