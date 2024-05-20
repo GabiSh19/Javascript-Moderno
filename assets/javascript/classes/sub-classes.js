@@ -49,14 +49,29 @@ class Persona  {
 
 }
 
-// const spiderman = new Persona ('Peter Parker', 'Spidy', 'Hola, soy Spiderman');
 
 class Heroe extends Persona{
     
-    clan = 'Sin clan'
+    clan = 'Sin clan';
+    
+    constructor( nombre, codigo, frase ){
+        super(nombre, codigo, frase);
+
+        this.clan = 'Los Avengers';
+
+    };
+
+    quienSoy(){
+        console.log(`Soy ${ this.nombre }, ${ this.clan }`)
+        //Si necesitamos llamar el método de la clase padre y mantener el de ahora, si se puede hacer. 
+        super.quienSoy();
+    }
     
 }
 
 
-const spiderman = new Heroe ();
+// const spiderman = new Persona ('Peter Parker', 'Spidy', 'Hola, soy Spiderman');
+const spiderman = new Heroe ('Peter Parker', 'Spidy', 'Hola, soy Spiderman');
 console.log(spiderman);
+spiderman.quienSoy();
+
