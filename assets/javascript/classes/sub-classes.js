@@ -49,25 +49,14 @@ class Persona  {
 
 }
 
+// const spiderman = new Persona ('Peter Parker', 'Spidy', 'Hola, soy Spiderman');
 
-const spiderman = new Persona ('Peter Parker', 'Spidy', 'Hola, soy Spiderman');
-const ironman = new Persona ('Tony Stark', 'IronMan', 'Yo soy Ironman');
-// console.log( ironman );
+class Heroe extends Persona{
+    
+    clan = 'Sin clan'
+    
+}
 
-// spiderman.miFrase();
-// ironman.miFrase();
 
-spiderman.setComidaFavorita = "El pie de cereza de la tía May";
-// console.log( spiderman ); 
-// console.log(spiderman.getComidaFavorita);
-
-// Persona._conteo = 2
-console.log('Conteo estátito: ', Persona._conteo);
-console.log(Persona.conteo);
-Persona.mensaje();
-
-//En javascript podemos definir propiedades estáticas fuera de la clase
-Persona.propiedadExterna = 'Hola Mundo';
-
-console.log( Persona.propiedadExterna );
-console.log(Persona);
+const spiderman = new Heroe ();
+console.log(spiderman);
