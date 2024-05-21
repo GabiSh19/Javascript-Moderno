@@ -1,5 +1,4 @@
 class Persona {
-
     static porObjeto ({ nombre, apellido, pais }) {
         return new Persona ( nombre, apellido, pais );    
     }
@@ -9,7 +8,6 @@ class Persona {
         this.nombre = nombre;
         this.apellido = apellido;
         this.pais = pais;
-
     } 
 
     getInfo() {

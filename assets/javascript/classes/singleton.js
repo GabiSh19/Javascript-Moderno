@@ -9,20 +9,17 @@ class Singleton {
     nombre = '' //Cualquier otra propiedad que queramos que se mantenga global. 
 
     constructor ( nombre = '') {
-
+        //  el !! es para pasarlo a booleano: en este caso es false. Es más fácil para nosotros y para JS trabajar con un valor booleano a que lo evalúe con un valor null o undefined.
         if ( !!Singleton.instancia ) {
             return Singleton.instancia;
             //Cuando llegue a este return se sale del constructor.
         }    
-        //  el !! es para pasarlo a booleano: en este caso es false. Es más fácil para nosotros y para JS trabajar con un valor booleano a que lo evalúe con un valor null o undefined.
-        
 
         // El this hace referencia a esta instancia de la clase.
         Singleton.instancia = this;
         this.nombre = nombre;
 
     }
-
 
 }
 

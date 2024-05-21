@@ -1,7 +1,6 @@
 //Hoy en día no se trabaja ya de esta manera, pero se estudia ya que aún hay casos en la actualidad. 
 
 // Si necesito extenderlo, añadirle propiedades, funcionalidade, se complicaría más
-//
 
 // Esto se debe crear con la palabra new
 function Persona (nombre, edad) {
