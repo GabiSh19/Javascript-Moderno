@@ -1,4 +1,5 @@
 class Persona {
+    //Lo siguiente es para simular otro constructor en esta clase Persona.
     static porObjeto ({ nombre, apellido, pais }) {
         return new Persona ( nombre, apellido, pais );    
     }
